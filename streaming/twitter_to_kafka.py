@@ -46,7 +46,7 @@ class TweeterStreamListener(tweepy.StreamListener):
 
 
 if __name__ == '__main__':
-    config = read_config('../streaming/properties/config.properties')
+    config = read_config('../streaming/config/config.properties')  # add requires auth details in config.properties
 
     access_key = config['access_key']
     access_secret = config['access_secret']

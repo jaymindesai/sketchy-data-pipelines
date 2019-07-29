@@ -1,0 +1,5 @@
+numpy
+kafka-python
+elasticsearch
+bloom-filter
+tweepy

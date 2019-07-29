@@ -3,15 +3,10 @@
 Requirements:
 
  - Python 3.x
- - NumPy
  - Kafka 2.1.0
  - Elasticsearch 6.7.0
  - Flask
- - Client APIs and packages if not already installed:
-    - pip install kafka-python
-    - pip install elasticsearch
-    - pip install bloom-filter
-    - pip install tweepy
+ - Client APIs and packages `pip install -r requirements.txt`
 
 Setup:
 
