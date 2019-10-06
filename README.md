@@ -31,22 +31,15 @@ Setup:
         
         curl -XPUT "http://localhost:9200/tweets"
 
- 5. Navigate to the 'code' directory and start the services:
+ 6. Navigate to the 'code' directory and start the services:
         
         python streaming/twitter_to_kafka.py
         python streaming/kafka_to_elastic.py
         python app/application.py
 
- 6. Initialize the stateful count-min sketch:
+ 7. Initialize the stateful count-min sketch:
         
         curl -v http://127.0.0.1:5000/initialize
 
- 7. Navigate to 'web' directory:
-        
-        open topk.html
-
-        Note: If cross-origin requests are not enabled, please first disable chrome websecurity for this session by
-        running the following command (for Mac)
-
-        open -a Google\ Chrome --args --disable-web-security --user-data-dir=""
+ 8. Call API endpoints listed as routes in `app/application.py` to get the data
  
